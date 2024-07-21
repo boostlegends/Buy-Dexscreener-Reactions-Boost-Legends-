@@ -1,0 +1,15 @@
+// main.js
+const reactions = [
+  { type: 'Fire', emoji: '🔥', description: 'Spark interest and excitement around your token.' },
+  { type: 'Rocket', emoji: '🚀', description: 'Highlight tokens with explosive growth potential.' },
+  { type: 'Poop', emoji: '💩', description: 'Add a touch of humor or indicate skepticism.' },
+  { type: 'Red Flag', emoji: '🚩', description: 'Warn traders of potential risks in a timely manner.' }
+];
+
+function getReactions() {
+  return reactions.map(reaction => `${reaction.type} ${reaction.emoji}: ${reaction.description}`).join('\n');
+}
+
+module.exports = { getReactions };
+
+// Website: https://boostlegends.com/
